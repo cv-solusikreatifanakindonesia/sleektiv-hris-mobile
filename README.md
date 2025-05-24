@@ -1,6 +1,6 @@
-# Horilla Mobile App  
+# Sleektiv HRIS Mobile App  
 
-Horilla is an open-source Human Resource Management System (HRMS). The Horilla mobile application is developed using **Dart** and **Flutter**. This app is designed to streamline employee management, attendance tracking, and leave management for organizations of any size.  
+Sleektiv HRIS is an open-source Human Resource Management System (HRMS). The Sleektiv HRIS mobile application is developed using **Dart** and **Flutter**. This app is designed to streamline employee management, attendance tracking, and leave management for organizations of any size.  
 
 ---
 
@@ -41,13 +41,10 @@ Ensure you have the following installed on your system:
 ### Steps  
 1. Clone the repository:  
    ```  
-   git clone https://github.com/horilla-opensource/HorillaMobile.git  
+   git clone https://github.com/cv-solusikreatifanakindonesia/sleektiv-hris-mobile.git
    ```  
 
-2. Navigate to the project directory:  
-   ```  
-   cd HorillaMobile/horilla_project  
-   ```  
+2. Navigate to the project directory
 
 3. Install dependencies:  
    ```  
@@ -63,7 +60,7 @@ Ensure you have the following installed on your system:
 
 ## Contributing  
 
-We welcome contributions to improve Horilla Mobile App! Follow these steps to contribute:  
+We welcome contributions to improve Sleektiv HRIS Mobile App! Follow these steps to contribute:  
 
 1. Fork the repository.  
 2. Create a new branch:  
@@ -87,9 +84,3 @@ We welcome contributions to improve Horilla Mobile App! Follow these steps to co
 This project is licensed under the [LGPL 2.1 License](LICENSE).  
 
 ---
-
-## Support  
-
-For any issues or suggestions, please create an issue on the [GitHub repository](https://github.com/horilla-opensource/HorillaMobile/issues).  
-
---- 
