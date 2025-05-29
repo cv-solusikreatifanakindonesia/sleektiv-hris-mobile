@@ -86,8 +86,12 @@ Future<void> main() async {
     fetchNotifications();
     unreadNotificationsCount();
   });
-
-
+  final prefs = await SharedPreferences.getInstance();
+  var typed_serverUrl = prefs.getString("typed_url");
+  if(typed_serverUrl == null){
+    final prefsSet = await SharedPreferences.getInstance();
+    prefsSet.setString("typed_url", "//IMPORTANT//API_URL//");
+  }
   runApp(LoginApp());
   clearSharedPrefs();
 }

@@ -30,13 +30,23 @@ class _LoginPageState extends State<LoginPage> {
     super.initState();
     getConnectivity();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
       double screenWidth = MediaQuery.of(context).size.width;
       double horizontalMarginPercentage = 0.1;
       setState(() {
         horizontalMargin = screenWidth * horizontalMarginPercentage;
       });
+      await _beforeLogin();
     });
+  }
+
+  //Login Init
+  Future<void> _beforeLogin() async {
+    final prefs = await SharedPreferences.getInstance();
+    var typed_serverUrl = prefs.getString("typed_url");
+    if(typed_serverUrl != null) {
+      serverController.text = typed_serverUrl;
+    }
   }
 
   /// Logs in the user by sending a POST request to the server.
